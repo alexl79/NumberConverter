@@ -33,6 +33,13 @@ class NumberConverterFrmTests: XCTestCase {
     func testConvert()
     {
         var s = ""
+        
+        s = NumberConverter.convert(-1)
+        XCTAssert(s == NSLS("NotAValidNumber"), "error converting: (\(s))")
+        
+        s = NumberConverter.convert(1000000000000000)
+        XCTAssert(s == NSLS("NotAValidNumber"), "error converting: (\(s))")
+        
         s = NumberConverter.convert(23)
         XCTAssert(s == "двадцать три", "error converting: (\(s))")
         
@@ -77,7 +84,7 @@ class NumberConverterFrmTests: XCTestCase {
 
         s = NumberConverter.convert(12000000000000)
         XCTAssert(s == "двенадцать триллионов", "error converting: (\(s))")
-
+        
     }
     
     func testDecl()

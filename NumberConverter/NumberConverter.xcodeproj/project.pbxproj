@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F9B821691D77615B00976925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821681D77615B00976925 /* AppDelegate.swift */; };
-		F9B8216B1D77615B00976925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8216A1D77615B00976925 /* ViewController.swift */; };
 		F9B8216E1D77615B00976925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B8216C1D77615B00976925 /* Main.storyboard */; };
 		F9B821701D77615B00976925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B8216F1D77615B00976925 /* Assets.xcassets */; };
 		F9B821731D77615B00976925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B821711D77615B00976925 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,12 @@
 		F9B821891D77615C00976925 /* NumberConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821881D77615C00976925 /* NumberConverterUITests.swift */; };
 		F9B821CB1D77A90800976925 /* NumberConverterFrm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B821C91D77A89300976925 /* NumberConverterFrm.framework */; };
 		F9B821CC1D77A90800976925 /* NumberConverterFrm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9B821C91D77A89300976925 /* NumberConverterFrm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9B821D01D77F5E000976925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821CF1D77F5E000976925 /* ViewController.swift */; };
+		F9B821D51D77F64800976925 /* input.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9B821D41D77F64800976925 /* input.plist */; };
+		F9B821D91D77F93D00976925 /* NumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9B821D81D77F93D00976925 /* NumberTableViewCell.xib */; };
+		F9B821DB1D77F9A800976925 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821DA1D77F9A800976925 /* NumberTableViewCell.swift */; };
+		F9B821DE1D77FA2600976925 /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821DD1D77FA2600976925 /* CommonExtensions.swift */; };
+		F9B821E01D77FD3000976925 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821DF1D77FD3000976925 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +57,6 @@
 /* Begin PBXFileReference section */
 		F9B821651D77615B00976925 /* NumberConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B821681D77615B00976925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9B8216A1D77615B00976925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9B8216D1D77615B00976925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9B8216F1D77615B00976925 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9B821721D77615B00976925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +68,12 @@
 		F9B821881D77615C00976925 /* NumberConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConverterUITests.swift; sourceTree = "<group>"; };
 		F9B8218A1D77615C00976925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B821C91D77A89300976925 /* NumberConverterFrm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NumberConverterFrm.framework; sourceTree = "<group>"; };
+		F9B821CF1D77F5E000976925 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9B821D41D77F64800976925 /* input.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = input.plist; sourceTree = "<group>"; };
+		F9B821D81D77F93D00976925 /* NumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberTableViewCell.xib; sourceTree = "<group>"; };
+		F9B821DA1D77F9A800976925 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
+		F9B821DD1D77FA2600976925 /* CommonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+		F9B821DF1D77FD3000976925 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +126,12 @@
 		F9B821671D77615B00976925 /* NumberConverter */ = {
 			isa = PBXGroup;
 			children = (
+				F9B821DC1D77FA1600976925 /* Common */,
+				F9B821D11D77F60700976925 /* Model */,
+				F9B821D31D77F61A00976925 /* View */,
+				F9B821CE1D77F5E000976925 /* Controller */,
+				F9B821D21D77F61300976925 /* Resources */,
 				F9B821681D77615B00976925 /* AppDelegate.swift */,
-				F9B8216A1D77615B00976925 /* ViewController.swift */,
 				F9B8216C1D77615B00976925 /* Main.storyboard */,
 				F9B8216F1D77615B00976925 /* Assets.xcassets */,
 				F9B821711D77615B00976925 /* LaunchScreen.storyboard */,
@@ -142,6 +156,47 @@
 				F9B8218A1D77615C00976925 /* Info.plist */,
 			);
 			path = NumberConverterUITests;
+			sourceTree = "<group>";
+		};
+		F9B821CE1D77F5E000976925 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821CF1D77F5E000976925 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9B821D11D77F60700976925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821DF1D77FD3000976925 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9B821D21D77F61300976925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821D41D77F64800976925 /* input.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9B821D31D77F61A00976925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821D81D77F93D00976925 /* NumberTableViewCell.xib */,
+				F9B821DA1D77F9A800976925 /* NumberTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9B821DC1D77FA1600976925 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821DD1D77FA2600976925 /* CommonExtensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B821731D77615B00976925 /* LaunchScreen.storyboard in Resources */,
+				F9B821D51D77F64800976925 /* input.plist in Resources */,
 				F9B821701D77615B00976925 /* Assets.xcassets in Resources */,
 				F9B8216E1D77615B00976925 /* Main.storyboard in Resources */,
+				F9B821D91D77F93D00976925 /* NumberTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9B8216B1D77615B00976925 /* ViewController.swift in Sources */,
+				F9B821DB1D77F9A800976925 /* NumberTableViewCell.swift in Sources */,
+				F9B821E01D77FD3000976925 /* DataManager.swift in Sources */,
+				F9B821D01D77F5E000976925 /* ViewController.swift in Sources */,
+				F9B821DE1D77FA2600976925 /* CommonExtensions.swift in Sources */,
 				F9B821691D77615B00976925 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

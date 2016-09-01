@@ -10,6 +10,8 @@ import Foundation
 
 public class NumberConverter
 {
+    static let NUMBER_MAX_CHARS = 15
+    
     //digits
     private let NamesDigitKey = "digit"
     private let NamesDigitDKey = "digit-d"
@@ -69,11 +71,17 @@ public class NumberConverter
         var resultArr = [String]()
         var subArr = [String]()
         
-        let numChars: [Character] = String(number).characters.reverse()
+        let s: String = String(number)
+        let numChars: [Character] = s.characters.reverse()
         var subNum: [Character] = ["0","0","0"]
         
-        let converter = NumberConverter()
+        if s.characters.count > NUMBER_MAX_CHARS || s.characters.first == "-"
+        {
+            return NSLS("NotAValidNumber")
+        }
         
+        let converter = NumberConverter()
+
         for i in 0 ..< numChars.count
         {
             if i % 3 == 0
