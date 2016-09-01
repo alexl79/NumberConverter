@@ -10,6 +10,10 @@
 		F9B821A41D77649D00976925 /* NumberConverterFrm.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B821A31D77649D00976925 /* NumberConverterFrm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9B821AB1D77649D00976925 /* NumberConverterFrm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B821A01D77649D00976925 /* NumberConverterFrm.framework */; };
 		F9B821B01D77649D00976925 /* NumberConverterFrmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821AF1D77649D00976925 /* NumberConverterFrmTests.swift */; };
+		F9B821BD1D7767AC00976925 /* NumberConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821BC1D7767AC00976925 /* NumberConverter.swift */; };
+		F9B821BF1D7769A800976925 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9B821BE1D7769A800976925 /* Localizable.strings */; };
+		F9B821C11D7769DF00976925 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821C01D7769DF00976925 /* Common.swift */; };
+		F9B821C51D77774E00976925 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B821C41D77774E00976925 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		F9B821AA1D77649D00976925 /* NumberConverterFrmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberConverterFrmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B821AF1D77649D00976925 /* NumberConverterFrmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConverterFrmTests.swift; sourceTree = "<group>"; };
 		F9B821B11D77649D00976925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B821BC1D7767AC00976925 /* NumberConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberConverter.swift; sourceTree = "<group>"; };
+		F9B821BE1D7769A800976925 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F9B821C01D7769DF00976925 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F9B821C41D77774E00976925 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +79,10 @@
 		F9B821A21D77649D00976925 /* NumberConverterFrm */ = {
 			isa = PBXGroup;
 			children = (
+				F9B821C61D777C3200976925 /* Utils */,
 				F9B821A31D77649D00976925 /* NumberConverterFrm.h */,
+				F9B821BC1D7767AC00976925 /* NumberConverter.swift */,
+				F9B821BE1D7769A800976925 /* Localizable.strings */,
 				F9B821A51D77649D00976925 /* Info.plist */,
 			);
 			path = NumberConverterFrm;
@@ -84,6 +95,15 @@
 				F9B821B11D77649D00976925 /* Info.plist */,
 			);
 			path = NumberConverterFrmTests;
+			sourceTree = "<group>";
+		};
+		F9B821C61D777C3200976925 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9B821C01D7769DF00976925 /* Common.swift */,
+				F9B821C41D77774E00976925 /* StringExtension.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B821BF1D7769A800976925 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B821C11D7769DF00976925 /* Common.swift in Sources */,
+				F9B821BD1D7767AC00976925 /* NumberConverter.swift in Sources */,
+				F9B821C51D77774E00976925 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +334,7 @@
 		F9B821B51D77649D00976925 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -321,12 +346,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.surfstudio.numberconvfrm.NumberConverterFrm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F9B821B61D77649D00976925 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
